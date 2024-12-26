@@ -43,7 +43,8 @@
     transform: scale(1.1);
     transition: all 0.3s;
     color: #ffffff;
-    text-decoration: underline;
+    background-color: rgb(89, 89, 89);
+    border-radius: 7px;
   }
   
   /* Seções */
@@ -122,8 +123,9 @@
   .projeto a:link, a:visited {
     transform: scale(1.1);
     transition: all 0.5s ease-in;
-    color: #727272;
+    color: #000;
     text-decoration: none;
+    opacity: 50%;
   }
 
   .projeto a:hover {
@@ -132,6 +134,7 @@
     color: #000;
     text-decoration: underline;
     font-weight: bold;
+    opacity: 100%;
   }
 
   .projeto h3 {
