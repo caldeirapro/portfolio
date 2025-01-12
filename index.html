@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seja bem vindo(a)!</title>  
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacoes">Formações</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <div class="container">
+      <h1>Olá, me chamo Daniel Caldeira!</h1>
+      <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras. Tenho experiência em backend, frontend e frameworks modernos.</p>
+    </div>
+  </section>
+
+  <section id="formacoes">
+    <div class="container">
+      <h2>Minhas formações</h2>
+      <div class="formacao">
+        <h3>Pós-graduação em Desenvolvimento Full Stack</h3>
+        <p>Janeiro de 2025 - Abril de 2025</p>
+      </div>
+      <div class="formacao">
+        <h3>Pós-graduação em Project Management</h3>
+        <p>Setembro de 2024 - Dezembro de 2024</p>
+      </div>
+      <div class="formacao">
+        <h3>Pós-graduação em Segurança da Informação</h3>
+        <p>Abril de 2024 - Setembro de 2024</p>
+      </div>
+      <div class="formacao">
+        <h3>Pós-graduação em Data Science</h3>
+        <p>Fevereiro de 2024 - Maio de 2024</p>
+      </div>
+      <div class="formacao">
+        <h3>Pós-graduação em Marketing e Growth</h3>
+        <p>Fevereiro de 2023 - Agosto de 2023</p>
+      </div>
+      <div class="formacao">
+        <h3>Graduação em Gestão da Tecnologia da Informação</h3>
+        <p>Julho de 2016 - Março de 2019</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="container">
+      <h2>Minhas Habilidades</h2>
+      <ul>
+        <li>.NET</li>
+        <li>C#</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>MongoDB</li>
+        <li>AngularJS</li>
+        <li>React.js</li>
+        <li>JavaScript</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Github</li>
+        <li>Kali Linux</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <h2>Projetos Recentes</h2>
+      <div class="projeto">
+        <a href="https://cardapio-five-phi.vercel.app/" target="_blank">
+          <h3>Cardápio Digital integrado ao WhatsApp</h3>
+          <p>Excelente cardápio digital para Hamburgueria com o encaminhamento do pedido integrado ao whatsapp. Projeto desenvolvido em html, css, talwindcss e javascript.</p>
+        </a>
+      </div>
+      <div class="projeto">
+      <a href="https://caldeirapro.github.io/calculadora/" target="_blank">
+        <h3>Calculadora Responsiva</h3>
+        <p>Calculadora online com todas as funções fundamentais e responsiva a todos os tipos de dispositivos. Foi utilizado nesse projeto html, css e javascript.</p>
+      </a>
+      </div>
+      <div class="projeto">
+      <a href="https://caldeirapro.github.io/to-do-list/" target="_blank">
+        <h3>App de Lista de Tarefas</h3>
+        <p>Um app to-do-list extremamente responsivo nos diversos dispositivos e útil para gerenciar as tarefas diárias. Este projeto foi desenvolvido em html, css e javascript.</p>
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+  <div class="container">
+    <h1>Envie sua mensagem</h1>
+    <form id="whatsapp-form">
+        <input type="text" id="name" placeholder="Seu nome" required>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Sua mensagem" required></textarea><br>
+
+        <button type="submit">Enviar para o WhatsApp</button>
+    </form>
+</div>
+    <!-- Link invisível que será usado para redirecionar para o WhatsApp -->
+    <a id="whatsapp-link" href="#" target="_blank" style="display: none;">Enviar mensagem</a>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Daniel Caldeira - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
