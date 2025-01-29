@@ -35,4 +35,46 @@
         alert("Por favor, digite uma mensagem!");
     }
 });
+
+// Adiciona o evento de rolagem suave para os links de navegação
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault(); // Impede o comportamento padrão de rolagem do navegador
+    
+    const targetId = this.getAttribute('href').substring(1); // Pega o id da âncora
+    const targetElement = document.getElementById(targetId);
+
+    // Rola até o elemento de forma suave
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Função para verificar se o elemento está visível na tela
+function isElementInView(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+}
+
+// Função para adicionar a classe 'visible' quando o elemento estiver visível
+function revealOnScroll() {
+  const sections = document.querySelectorAll('section');
+  
+  sections.forEach(section => {
+    // Se a seção estiver visível na tela, adicione a classe 'visible'
+    if (isElementInView(section)) {
+      section.classList.add('visible');  // Ativa a animação
+      section.classList.add('fade-in');  // Pode usar 'slide-in' também se preferir
+    }
+  });
+}
+
+// Chama a função na rolagem
+window.addEventListener('scroll', revealOnScroll);
+
+// Também executa a função na carga inicial da página (caso já esteja visível)
+document.addEventListener('DOMContentLoaded', revealOnScroll);
+
   
