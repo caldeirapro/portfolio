@@ -16,7 +16,7 @@
         const encodedMessage = encodeURIComponent(message);
 
         // Número do WhatsApp (incluindo o código do país, sem espaços ou símbolos)
-        const phoneNumber = '5596984009449';
+        const phoneNumber = '55961991941492';
 
         // Monta a URL para enviar a mensagem pelo WhatsApp
         const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=Olá, meu nome é ${encodedName}. ${encodedMessage}`;
